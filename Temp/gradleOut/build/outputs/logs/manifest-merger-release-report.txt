@@ -1,0 +1,603 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-33:12
+MERGED from [:android.arch.lifecycle.runtime-1.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\android.arch.lifecycle.runtime-1.0.0.aar\e6cc9d23de198bdab56e4127b0ac9afa\AndroidManifest.xml:17:1-30:12
+MERGED from [:com.android.support.animated-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.animated-vector-drawable-26.1.0.aar\4414924ef9bc017a166e4f064d0c4a86\AndroidManifest.xml:17:1-28:12
+MERGED from [:com.android.support.appcompat-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.appcompat-v7-26.1.0.aar\06b6d99205d71788f838c2f7c77fd0f7\AndroidManifest.xml:17:1-31:12
+MERGED from [:com.android.support.cardview-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.cardview-v7-26.1.0.aar\bf1762a17f47160b30147f6c6e508216\AndroidManifest.xml:17:1-28:12
+MERGED from [:com.android.support.customtabs-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.customtabs-26.1.0.aar\fbe06aaed36b1f42efe4a30f39c9537a\AndroidManifest.xml:17:1-28:12
+MERGED from [:com.android.support.support-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-compat-26.1.0.aar\781bae43f6d4b4195df515e16703a43d\AndroidManifest.xml:17:1-31:12
+MERGED from [:com.android.support.support-core-ui-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-ui-26.1.0.aar\5a24f51e5bfa7fdc6562585e551f9fe9\AndroidManifest.xml:17:1-31:12
+MERGED from [:com.android.support.support-core-utils-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-utils-26.1.0.aar\4ca2de0e4ffb0c6baec5d3279ceba6c0\AndroidManifest.xml:17:1-31:12
+MERGED from [:com.android.support.support-fragment-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-fragment-26.1.0.aar\29ca3e410692df1b89cfb549f28fbc95\AndroidManifest.xml:17:1-31:12
+MERGED from [:com.android.support.support-media-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-media-compat-26.1.0.aar\c7872c6bd8d9b49bc36f3723208b6a3a\AndroidManifest.xml:17:1-31:12
+MERGED from [:com.android.support.support-v4-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-v4-26.1.0.aar\56c05246b5fbe24ee4298142237ea6b2\AndroidManifest.xml:17:1-31:12
+MERGED from [:com.android.support.support-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-vector-drawable-26.1.0.aar\15ce0d2fe09ba7918fdedb735b302d6b\AndroidManifest.xml:17:1-28:12
+MERGED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:17:1-39:12
+MERGED from [:com.google.android.gms.play-services-auth-api-phone-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-api-phone-16.0.0.aar\5d0f18518dc279cf1385be666bdace7a\AndroidManifest.xml:2:1-7:12
+MERGED from [:com.google.android.gms.play-services-auth-base-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-base-16.0.0.aar\37f20317e09248bef1117560771b2fe3\AndroidManifest.xml:2:1-7:12
+MERGED from [:com.google.android.gms.play-services-base-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-base-16.0.1.aar\710d48d17dd4974de396b18943beb8a6\AndroidManifest.xml:17:1-29:12
+MERGED from [:com.google.android.gms.play-services-basement-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-basement-16.0.1.aar\a67d445b9f4f07a9667f7a8cd910f44d\AndroidManifest.xml:17:1-28:12
+MERGED from [:com.google.android.gms.play-services-drive-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-drive-16.0.0.aar\63e04459127eed1be650d9a802b51415\AndroidManifest.xml:17:1-24:12
+MERGED from [:com.google.android.gms.play-services-games-17.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-games-17.0.0.aar\9b8b68a99b391b4f93b6060f5771dd81\AndroidManifest.xml:17:1-24:12
+MERGED from [:com.google.android.gms.play-services-nearby-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-nearby-16.0.0.aar\940d1ef4c156e5337493d3cceae64399\AndroidManifest.xml:2:1-11:12
+MERGED from [:com.google.android.gms.play-services-tasks-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-tasks-16.0.1.aar\5833b7cd11d3b8089cef721e70c05831\AndroidManifest.xml:2:1-9:12
+MERGED from [:com.google.games.gpgs-plugin-support-0.9.63:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.games.gpgs-plugin-support-0.9.63.aar\d1d0e4a381ded570fb077717f3b07006\AndroidManifest.xml:2:1-11:12
+MERGED from [:common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\common.aar\2480510e80455780dd26659aceb989f3\AndroidManifest.xml:2:1-12:12
+MERGED from [:facebook-android-wrapper-7.12.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-android-wrapper-7.12.0.aar\f0c1e1fcfe8a401ab10b0150c68b07b9\AndroidManifest.xml:21:1-30:12
+MERGED from [:facebook-applinks:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-applinks.aar\9846cfab84616a4f3fd92438a4b17a98\AndroidManifest.xml:21:1-31:12
+MERGED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:21:1-36:12
+MERGED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:21:1-53:12
+MERGED from [:facebook-login:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-login.aar\8f80a92f02696c36cbe4019836d14487\AndroidManifest.xml:21:1-31:12
+MERGED from [:facebook-messenger:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-messenger.aar\5f08dbcf6e369ea634b21e5de422c32e\AndroidManifest.xml:21:1-31:12
+MERGED from [:facebook-places:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-places.aar\5cb543d21b8fd1143604a67093f8bdf3\AndroidManifest.xml:21:1-31:12
+MERGED from [:facebook-share:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-share.aar\674fec4ebb4c54932cb227a74c890f11\AndroidManifest.xml:21:1-31:12
+MERGED from [:GoogleAIDL:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GoogleAIDL.aar\a888ad089a569bba849a355b74837e41\AndroidManifest.xml:2:1-12:12
+MERGED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:2:1-40:12
+MERGED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:2:1-37:12
+MERGED from [:GoogleMobileAdsPlugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GoogleMobileAdsPlugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:7:1-27:12
+MERGED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:6:1-32:12
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-33:12
+	package
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:70-105
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:106-152
+	android:versionCode
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:2:153-193
+supports-screens
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:3:3-163
+	android:largeScreens
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:3:78-105
+	android:smallScreens
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:3:21-48
+	android:normalScreens
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:3:49-77
+	android:xlargeScreens
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:3:106-134
+	android:anyDensity
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:3:135-160
+application
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:4:3-27:17
+MERGED from [:android.arch.lifecycle.runtime-1.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\android.arch.lifecycle.runtime-1.0.0.aar\e6cc9d23de198bdab56e4127b0ac9afa\AndroidManifest.xml:24:5-28:19
+MERGED from [:android.arch.lifecycle.runtime-1.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\android.arch.lifecycle.runtime-1.0.0.aar\e6cc9d23de198bdab56e4127b0ac9afa\AndroidManifest.xml:24:5-28:19
+MERGED from [:com.android.support.animated-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.animated-vector-drawable-26.1.0.aar\4414924ef9bc017a166e4f064d0c4a86\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.android.support.animated-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.animated-vector-drawable-26.1.0.aar\4414924ef9bc017a166e4f064d0c4a86\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.android.support.appcompat-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.appcompat-v7-26.1.0.aar\06b6d99205d71788f838c2f7c77fd0f7\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.appcompat-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.appcompat-v7-26.1.0.aar\06b6d99205d71788f838c2f7c77fd0f7\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.cardview-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.cardview-v7-26.1.0.aar\bf1762a17f47160b30147f6c6e508216\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.android.support.cardview-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.cardview-v7-26.1.0.aar\bf1762a17f47160b30147f6c6e508216\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.android.support.customtabs-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.customtabs-26.1.0.aar\fbe06aaed36b1f42efe4a30f39c9537a\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.android.support.customtabs-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.customtabs-26.1.0.aar\fbe06aaed36b1f42efe4a30f39c9537a\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.android.support.support-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-compat-26.1.0.aar\781bae43f6d4b4195df515e16703a43d\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-compat-26.1.0.aar\781bae43f6d4b4195df515e16703a43d\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-core-ui-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-ui-26.1.0.aar\5a24f51e5bfa7fdc6562585e551f9fe9\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-core-ui-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-ui-26.1.0.aar\5a24f51e5bfa7fdc6562585e551f9fe9\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-core-utils-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-utils-26.1.0.aar\4ca2de0e4ffb0c6baec5d3279ceba6c0\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-core-utils-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-utils-26.1.0.aar\4ca2de0e4ffb0c6baec5d3279ceba6c0\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-fragment-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-fragment-26.1.0.aar\29ca3e410692df1b89cfb549f28fbc95\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-fragment-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-fragment-26.1.0.aar\29ca3e410692df1b89cfb549f28fbc95\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-media-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-media-compat-26.1.0.aar\c7872c6bd8d9b49bc36f3723208b6a3a\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-media-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-media-compat-26.1.0.aar\c7872c6bd8d9b49bc36f3723208b6a3a\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-v4-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-v4-26.1.0.aar\56c05246b5fbe24ee4298142237ea6b2\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-v4-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-v4-26.1.0.aar\56c05246b5fbe24ee4298142237ea6b2\AndroidManifest.xml:25:5-29:19
+MERGED from [:com.android.support.support-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-vector-drawable-26.1.0.aar\15ce0d2fe09ba7918fdedb735b302d6b\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.android.support.support-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-vector-drawable-26.1.0.aar\15ce0d2fe09ba7918fdedb735b302d6b\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:22:5-37:19
+MERGED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:22:5-37:19
+MERGED from [:com.google.android.gms.play-services-base-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-base-16.0.1.aar\710d48d17dd4974de396b18943beb8a6\AndroidManifest.xml:22:5-27:19
+MERGED from [:com.google.android.gms.play-services-base-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-base-16.0.1.aar\710d48d17dd4974de396b18943beb8a6\AndroidManifest.xml:22:5-27:19
+MERGED from [:com.google.android.gms.play-services-basement-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-basement-16.0.1.aar\a67d445b9f4f07a9667f7a8cd910f44d\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.google.android.gms.play-services-basement-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-basement-16.0.1.aar\a67d445b9f4f07a9667f7a8cd910f44d\AndroidManifest.xml:22:5-26:19
+MERGED from [:com.google.android.gms.play-services-drive-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-drive-16.0.0.aar\63e04459127eed1be650d9a802b51415\AndroidManifest.xml:22:5-20
+MERGED from [:com.google.android.gms.play-services-drive-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-drive-16.0.0.aar\63e04459127eed1be650d9a802b51415\AndroidManifest.xml:22:5-20
+MERGED from [:com.google.android.gms.play-services-games-17.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-games-17.0.0.aar\9b8b68a99b391b4f93b6060f5771dd81\AndroidManifest.xml:22:5-20
+MERGED from [:com.google.android.gms.play-services-games-17.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-games-17.0.0.aar\9b8b68a99b391b4f93b6060f5771dd81\AndroidManifest.xml:22:5-20
+MERGED from [:com.google.android.gms.play-services-nearby-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-nearby-16.0.0.aar\940d1ef4c156e5337493d3cceae64399\AndroidManifest.xml:9:5-20
+MERGED from [:com.google.android.gms.play-services-nearby-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-nearby-16.0.0.aar\940d1ef4c156e5337493d3cceae64399\AndroidManifest.xml:9:5-20
+MERGED from [:com.google.android.gms.play-services-tasks-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-tasks-16.0.1.aar\5833b7cd11d3b8089cef721e70c05831\AndroidManifest.xml:7:5-20
+MERGED from [:com.google.android.gms.play-services-tasks-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-tasks-16.0.1.aar\5833b7cd11d3b8089cef721e70c05831\AndroidManifest.xml:7:5-20
+MERGED from [:com.google.games.gpgs-plugin-support-0.9.63:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.games.gpgs-plugin-support-0.9.63.aar\d1d0e4a381ded570fb077717f3b07006\AndroidManifest.xml:9:5-20
+MERGED from [:com.google.games.gpgs-plugin-support-0.9.63:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.games.gpgs-plugin-support-0.9.63.aar\d1d0e4a381ded570fb077717f3b07006\AndroidManifest.xml:9:5-20
+MERGED from [:common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\common.aar\2480510e80455780dd26659aceb989f3\AndroidManifest.xml:9:5-10:19
+MERGED from [:common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\common.aar\2480510e80455780dd26659aceb989f3\AndroidManifest.xml:9:5-10:19
+MERGED from [:facebook-android-wrapper-7.12.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-android-wrapper-7.12.0.aar\f0c1e1fcfe8a401ab10b0150c68b07b9\AndroidManifest.xml:28:5-20
+MERGED from [:facebook-android-wrapper-7.12.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-android-wrapper-7.12.0.aar\f0c1e1fcfe8a401ab10b0150c68b07b9\AndroidManifest.xml:28:5-20
+MERGED from [:facebook-applinks:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-applinks.aar\9846cfab84616a4f3fd92438a4b17a98\AndroidManifest.xml:28:5-29:19
+MERGED from [:facebook-applinks:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-applinks.aar\9846cfab84616a4f3fd92438a4b17a98\AndroidManifest.xml:28:5-29:19
+MERGED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:28:5-34:19
+MERGED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:28:5-34:19
+MERGED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:28:5-51:19
+MERGED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:28:5-51:19
+MERGED from [:facebook-login:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-login.aar\8f80a92f02696c36cbe4019836d14487\AndroidManifest.xml:28:5-29:19
+MERGED from [:facebook-login:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-login.aar\8f80a92f02696c36cbe4019836d14487\AndroidManifest.xml:28:5-29:19
+MERGED from [:facebook-messenger:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-messenger.aar\5f08dbcf6e369ea634b21e5de422c32e\AndroidManifest.xml:28:5-29:19
+MERGED from [:facebook-messenger:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-messenger.aar\5f08dbcf6e369ea634b21e5de422c32e\AndroidManifest.xml:28:5-29:19
+MERGED from [:facebook-places:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-places.aar\5cb543d21b8fd1143604a67093f8bdf3\AndroidManifest.xml:28:5-29:19
+MERGED from [:facebook-places:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-places.aar\5cb543d21b8fd1143604a67093f8bdf3\AndroidManifest.xml:28:5-29:19
+MERGED from [:facebook-share:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-share.aar\674fec4ebb4c54932cb227a74c890f11\AndroidManifest.xml:28:5-29:19
+MERGED from [:facebook-share:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-share.aar\674fec4ebb4c54932cb227a74c890f11\AndroidManifest.xml:28:5-29:19
+MERGED from [:GoogleAIDL:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GoogleAIDL.aar\a888ad089a569bba849a355b74837e41\AndroidManifest.xml:9:5-10:19
+MERGED from [:GoogleAIDL:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GoogleAIDL.aar\a888ad089a569bba849a355b74837e41\AndroidManifest.xml:9:5-10:19
+MERGED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:22:5-38:19
+MERGED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:22:5-38:19
+MERGED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:14:5-35:19
+MERGED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:14:5-35:19
+MERGED from [:GoogleMobileAdsPlugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GoogleMobileAdsPlugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:16:5-25:19
+MERGED from [:GoogleMobileAdsPlugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GoogleMobileAdsPlugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:16:5-25:19
+MERGED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:15:5-30:19
+MERGED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:15:5-30:19
+	android:supportsRtl
+		ADDED from [:facebook-applinks:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-applinks.aar\9846cfab84616a4f3fd92438a4b17a98\AndroidManifest.xml:28:18-44
+	android:label
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:4:90-122
+	android:allowBackup
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:22:18-44
+	android:icon
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:4:58-89
+	android:banner
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:4:145-182
+	android:theme
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:4:16-57
+	android:isGame
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:4:123-144
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:5:5-12:16
+	android:screenOrientation
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:5:102-140
+	android:label
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:5:69-101
+	android:launchMode
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:5:141-172
+	android:hardwareAccelerated
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:5:355-390
+	android:configChanges
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:5:173-354
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:5:15-68
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.LEANBACK_LAUNCHER
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:6:7-10:23
+action#android.intent.action.MAIN
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:7:9-61
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:7:17-58
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:8:9-69
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:8:19-66
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:9:9-78
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:9:19-75
+meta-data#unityplayer.UnityActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:11:7-82
+	android:value
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:11:59-79
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:11:18-58
+activity#com.facebook.unity.FBUnityLoginActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:13:5-301
+	android:configChanges
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:13:70-227
+	android:theme
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:13:228-298
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:13:15-69
+activity#com.facebook.unity.FBUnityDialogsActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:14:5-303
+	android:configChanges
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:14:72-229
+	android:theme
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:14:230-300
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:14:15-71
+activity#com.facebook.unity.FBUnityAppLinkActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:15:5-98
+	android:exported
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:15:72-95
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:15:15-71
+activity#com.facebook.unity.FBUnityDeepLinkingActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:16:5-102
+	android:exported
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:16:76-99
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:16:15-75
+activity#com.facebook.unity.FBUnityGameRequestActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:17:5-78
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:17:15-75
+activity#com.facebook.unity.FBUnityCreateGameGroupActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:18:5-82
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:18:15-79
+activity#com.facebook.unity.FBUnityJoinGameGroupActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:19:15-77
+activity#com.facebook.unity.AppInviteDialogActivity
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:20:5-75
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:20:15-72
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:21:5-99
+	android:value
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:21:62-96
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:21:16-61
+provider#com.facebook.FacebookContentProvider
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:22:5-172
+	android:authorities
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:22:67-145
+	android:exported
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:22:146-169
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:22:15-66
+meta-data#com.google.gms.ads.349011032571
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:23:5-130
+	android:value
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:23:63-127
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:23:16-62
+meta-data#unity.build-id
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:24:5-101
+	android:value
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:24:46-98
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:24:16-45
+meta-data#unity.splash-mode
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:25:5-69
+	android:value
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:25:49-66
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:25:16-48
+meta-data#unity.splash-enable
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:26:5-74
+	android:value
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:26:51-71
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:26:16-50
+uses-feature#0x00020000
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:28:3-52
+	android:glEsVersion
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:28:17-49
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:29:3-65
+MERGED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:11:5-67
+MERGED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:11:5-67
+MERGED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:12:5-67
+MERGED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:29:20-62
+uses-feature#android.hardware.touchscreen
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:30:3-88
+	android:required
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:30:61-85
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:30:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:31:3-99
+	android:required
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:31:72-96
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:31:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:32:3-108
+	android:required
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:32:81-105
+	android:name
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml:32:17-80
+uses-sdk
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+MERGED from [:android.arch.lifecycle.runtime-1.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\android.arch.lifecycle.runtime-1.0.0.aar\e6cc9d23de198bdab56e4127b0ac9afa\AndroidManifest.xml:20:5-22:41
+MERGED from [:android.arch.lifecycle.runtime-1.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\android.arch.lifecycle.runtime-1.0.0.aar\e6cc9d23de198bdab56e4127b0ac9afa\AndroidManifest.xml:20:5-22:41
+MERGED from [:com.android.support.animated-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.animated-vector-drawable-26.1.0.aar\4414924ef9bc017a166e4f064d0c4a86\AndroidManifest.xml:20:5-44
+MERGED from [:com.android.support.animated-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.animated-vector-drawable-26.1.0.aar\4414924ef9bc017a166e4f064d0c4a86\AndroidManifest.xml:20:5-44
+MERGED from [:com.android.support.appcompat-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.appcompat-v7-26.1.0.aar\06b6d99205d71788f838c2f7c77fd0f7\AndroidManifest.xml:21:5-23:78
+MERGED from [:com.android.support.appcompat-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.appcompat-v7-26.1.0.aar\06b6d99205d71788f838c2f7c77fd0f7\AndroidManifest.xml:21:5-23:78
+MERGED from [:com.android.support.cardview-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.cardview-v7-26.1.0.aar\bf1762a17f47160b30147f6c6e508216\AndroidManifest.xml:20:5-44
+MERGED from [:com.android.support.cardview-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.cardview-v7-26.1.0.aar\bf1762a17f47160b30147f6c6e508216\AndroidManifest.xml:20:5-44
+MERGED from [:com.android.support.customtabs-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.customtabs-26.1.0.aar\fbe06aaed36b1f42efe4a30f39c9537a\AndroidManifest.xml:20:5-44
+MERGED from [:com.android.support.customtabs-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.customtabs-26.1.0.aar\fbe06aaed36b1f42efe4a30f39c9537a\AndroidManifest.xml:20:5-44
+MERGED from [:com.android.support.support-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-compat-26.1.0.aar\781bae43f6d4b4195df515e16703a43d\AndroidManifest.xml:21:5-23:58
+MERGED from [:com.android.support.support-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-compat-26.1.0.aar\781bae43f6d4b4195df515e16703a43d\AndroidManifest.xml:21:5-23:58
+MERGED from [:com.android.support.support-core-ui-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-ui-26.1.0.aar\5a24f51e5bfa7fdc6562585e551f9fe9\AndroidManifest.xml:21:5-23:58
+MERGED from [:com.android.support.support-core-ui-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-ui-26.1.0.aar\5a24f51e5bfa7fdc6562585e551f9fe9\AndroidManifest.xml:21:5-23:58
+MERGED from [:com.android.support.support-core-utils-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-utils-26.1.0.aar\4ca2de0e4ffb0c6baec5d3279ceba6c0\AndroidManifest.xml:21:5-23:61
+MERGED from [:com.android.support.support-core-utils-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-utils-26.1.0.aar\4ca2de0e4ffb0c6baec5d3279ceba6c0\AndroidManifest.xml:21:5-23:61
+MERGED from [:com.android.support.support-fragment-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-fragment-26.1.0.aar\29ca3e410692df1b89cfb549f28fbc95\AndroidManifest.xml:21:5-23:60
+MERGED from [:com.android.support.support-fragment-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-fragment-26.1.0.aar\29ca3e410692df1b89cfb549f28fbc95\AndroidManifest.xml:21:5-23:60
+MERGED from [:com.android.support.support-media-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-media-compat-26.1.0.aar\c7872c6bd8d9b49bc36f3723208b6a3a\AndroidManifest.xml:21:5-23:63
+MERGED from [:com.android.support.support-media-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-media-compat-26.1.0.aar\c7872c6bd8d9b49bc36f3723208b6a3a\AndroidManifest.xml:21:5-23:63
+MERGED from [:com.android.support.support-v4-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-v4-26.1.0.aar\56c05246b5fbe24ee4298142237ea6b2\AndroidManifest.xml:21:5-23:54
+MERGED from [:com.android.support.support-v4-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-v4-26.1.0.aar\56c05246b5fbe24ee4298142237ea6b2\AndroidManifest.xml:21:5-23:54
+MERGED from [:com.android.support.support-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-vector-drawable-26.1.0.aar\15ce0d2fe09ba7918fdedb735b302d6b\AndroidManifest.xml:20:5-44
+MERGED from [:com.android.support.support-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-vector-drawable-26.1.0.aar\15ce0d2fe09ba7918fdedb735b302d6b\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-auth-api-phone-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-api-phone-16.0.0.aar\5d0f18518dc279cf1385be666bdace7a\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-auth-api-phone-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-api-phone-16.0.0.aar\5d0f18518dc279cf1385be666bdace7a\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-auth-base-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-base-16.0.0.aar\37f20317e09248bef1117560771b2fe3\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-auth-base-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-base-16.0.0.aar\37f20317e09248bef1117560771b2fe3\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-base-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-base-16.0.1.aar\710d48d17dd4974de396b18943beb8a6\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-base-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-base-16.0.1.aar\710d48d17dd4974de396b18943beb8a6\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-basement-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-basement-16.0.1.aar\a67d445b9f4f07a9667f7a8cd910f44d\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-basement-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-basement-16.0.1.aar\a67d445b9f4f07a9667f7a8cd910f44d\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-drive-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-drive-16.0.0.aar\63e04459127eed1be650d9a802b51415\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-drive-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-drive-16.0.0.aar\63e04459127eed1be650d9a802b51415\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-games-17.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-games-17.0.0.aar\9b8b68a99b391b4f93b6060f5771dd81\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-games-17.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-games-17.0.0.aar\9b8b68a99b391b4f93b6060f5771dd81\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-nearby-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-nearby-16.0.0.aar\940d1ef4c156e5337493d3cceae64399\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-nearby-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-nearby-16.0.0.aar\940d1ef4c156e5337493d3cceae64399\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-tasks-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-tasks-16.0.1.aar\5833b7cd11d3b8089cef721e70c05831\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-tasks-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-tasks-16.0.1.aar\5833b7cd11d3b8089cef721e70c05831\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.games.gpgs-plugin-support-0.9.63:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.games.gpgs-plugin-support-0.9.63.aar\d1d0e4a381ded570fb077717f3b07006\AndroidManifest.xml:7:5-44
+MERGED from [:com.google.games.gpgs-plugin-support-0.9.63:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.games.gpgs-plugin-support-0.9.63.aar\d1d0e4a381ded570fb077717f3b07006\AndroidManifest.xml:7:5-44
+MERGED from [:common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\common.aar\2480510e80455780dd26659aceb989f3\AndroidManifest.xml:7:5-43
+MERGED from [:common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\common.aar\2480510e80455780dd26659aceb989f3\AndroidManifest.xml:7:5-43
+MERGED from [:facebook-android-wrapper-7.12.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-android-wrapper-7.12.0.aar\f0c1e1fcfe8a401ab10b0150c68b07b9\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-android-wrapper-7.12.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-android-wrapper-7.12.0.aar\f0c1e1fcfe8a401ab10b0150c68b07b9\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-applinks:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-applinks.aar\9846cfab84616a4f3fd92438a4b17a98\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-applinks:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-applinks.aar\9846cfab84616a4f3fd92438a4b17a98\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-login:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-login.aar\8f80a92f02696c36cbe4019836d14487\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-login:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-login.aar\8f80a92f02696c36cbe4019836d14487\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-messenger:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-messenger.aar\5f08dbcf6e369ea634b21e5de422c32e\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-messenger:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-messenger.aar\5f08dbcf6e369ea634b21e5de422c32e\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-places:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-places.aar\5cb543d21b8fd1143604a67093f8bdf3\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-places:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-places.aar\5cb543d21b8fd1143604a67093f8bdf3\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-share:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-share.aar\674fec4ebb4c54932cb227a74c890f11\AndroidManifest.xml:24:5-26:41
+MERGED from [:facebook-share:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-share.aar\674fec4ebb4c54932cb227a74c890f11\AndroidManifest.xml:24:5-26:41
+MERGED from [:GoogleAIDL:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GoogleAIDL.aar\a888ad089a569bba849a355b74837e41\AndroidManifest.xml:7:5-43
+MERGED from [:GoogleAIDL:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GoogleAIDL.aar\a888ad089a569bba849a355b74837e41\AndroidManifest.xml:7:5-43
+MERGED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:7:5-9:41
+MERGED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:7:5-9:41
+MERGED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:7:5-9:41
+MERGED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:7:5-9:41
+MERGED from [:GoogleMobileAdsPlugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GoogleMobileAdsPlugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:12:5-14:41
+MERGED from [:GoogleMobileAdsPlugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GoogleMobileAdsPlugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:12:5-14:41
+MERGED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:11:5-13:41
+MERGED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:11:5-13:41
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:com.android.support.appcompat-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.appcompat-v7-26.1.0.aar\06b6d99205d71788f838c2f7c77fd0f7\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+		ADDED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\src\main\AndroidManifest.xml
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [:android.arch.lifecycle.runtime-1.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\android.arch.lifecycle.runtime-1.0.0.aar\e6cc9d23de198bdab56e4127b0ac9afa\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [:android.arch.lifecycle.runtime-1.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\android.arch.lifecycle.runtime-1.0.0.aar\e6cc9d23de198bdab56e4127b0ac9afa\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [:android.arch.lifecycle.runtime-1.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\android.arch.lifecycle.runtime-1.0.0.aar\e6cc9d23de198bdab56e4127b0ac9afa\AndroidManifest.xml:26:13-58
+meta-data#android.support.VERSION
+ADDED from [:com.android.support.animated-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.animated-vector-drawable-26.1.0.aar\4414924ef9bc017a166e4f064d0c4a86\AndroidManifest.xml:23:9-25:38
+MERGED from [:com.android.support.appcompat-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.appcompat-v7-26.1.0.aar\06b6d99205d71788f838c2f7c77fd0f7\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.appcompat-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.appcompat-v7-26.1.0.aar\06b6d99205d71788f838c2f7c77fd0f7\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.cardview-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.cardview-v7-26.1.0.aar\bf1762a17f47160b30147f6c6e508216\AndroidManifest.xml:23:9-25:38
+MERGED from [:com.android.support.cardview-v7-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.cardview-v7-26.1.0.aar\bf1762a17f47160b30147f6c6e508216\AndroidManifest.xml:23:9-25:38
+MERGED from [:com.android.support.customtabs-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.customtabs-26.1.0.aar\fbe06aaed36b1f42efe4a30f39c9537a\AndroidManifest.xml:23:9-25:38
+MERGED from [:com.android.support.customtabs-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.customtabs-26.1.0.aar\fbe06aaed36b1f42efe4a30f39c9537a\AndroidManifest.xml:23:9-25:38
+MERGED from [:com.android.support.support-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-compat-26.1.0.aar\781bae43f6d4b4195df515e16703a43d\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-compat-26.1.0.aar\781bae43f6d4b4195df515e16703a43d\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-core-ui-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-ui-26.1.0.aar\5a24f51e5bfa7fdc6562585e551f9fe9\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-core-ui-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-ui-26.1.0.aar\5a24f51e5bfa7fdc6562585e551f9fe9\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-core-utils-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-utils-26.1.0.aar\4ca2de0e4ffb0c6baec5d3279ceba6c0\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-core-utils-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-core-utils-26.1.0.aar\4ca2de0e4ffb0c6baec5d3279ceba6c0\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-fragment-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-fragment-26.1.0.aar\29ca3e410692df1b89cfb549f28fbc95\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-fragment-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-fragment-26.1.0.aar\29ca3e410692df1b89cfb549f28fbc95\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-media-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-media-compat-26.1.0.aar\c7872c6bd8d9b49bc36f3723208b6a3a\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-media-compat-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-media-compat-26.1.0.aar\c7872c6bd8d9b49bc36f3723208b6a3a\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-v4-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-v4-26.1.0.aar\56c05246b5fbe24ee4298142237ea6b2\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-v4-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-v4-26.1.0.aar\56c05246b5fbe24ee4298142237ea6b2\AndroidManifest.xml:26:9-28:38
+MERGED from [:com.android.support.support-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-vector-drawable-26.1.0.aar\15ce0d2fe09ba7918fdedb735b302d6b\AndroidManifest.xml:23:9-25:38
+MERGED from [:com.android.support.support-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.support-vector-drawable-26.1.0.aar\15ce0d2fe09ba7918fdedb735b302d6b\AndroidManifest.xml:23:9-25:38
+	android:value
+		ADDED from [:com.android.support.animated-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.animated-vector-drawable-26.1.0.aar\4414924ef9bc017a166e4f064d0c4a86\AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [:com.android.support.animated-vector-drawable-26.1.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.android.support.animated-vector-drawable-26.1.0.aar\4414924ef9bc017a166e4f064d0c4a86\AndroidManifest.xml:24:13-51
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [:com.google.android.gms.play-services-auth-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-auth-16.0.1.aar\55c06e1106c40ee8eec469555a16fe68\AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [:com.google.android.gms.play-services-base-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-base-16.0.1.aar\710d48d17dd4974de396b18943beb8a6\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-base-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-base-16.0.1.aar\710d48d17dd4974de396b18943beb8a6\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [:com.google.android.gms.play-services-base-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-base-16.0.1.aar\710d48d17dd4974de396b18943beb8a6\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [:com.google.android.gms.play-services-base-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-base-16.0.1.aar\710d48d17dd4974de396b18943beb8a6\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [:com.google.android.gms.play-services-basement-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-basement-16.0.1.aar\a67d445b9f4f07a9667f7a8cd910f44d\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [:com.google.android.gms.play-services-basement-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-basement-16.0.1.aar\a67d445b9f4f07a9667f7a8cd910f44d\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [:com.google.android.gms.play-services-basement-16.0.1:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-basement-16.0.1.aar\a67d445b9f4f07a9667f7a8cd910f44d\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:com.google.android.gms.play-services-nearby-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-nearby-16.0.0.aar\940d1ef4c156e5337493d3cceae64399\AndroidManifest.xml:7:5-79
+MERGED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:11:5-79
+MERGED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [:com.google.android.gms.play-services-nearby-16.0.0:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\com.google.android.gms.play-services-nearby-16.0.0.aar\940d1ef4c156e5337493d3cceae64399\AndroidManifest.xml:7:22-76
+activity#com.facebook.FacebookActivity
+ADDED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabMainActivity
+ADDED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [:facebook-common:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-common.aar\c6136f4bbf32d4da7a7175654516fcac\AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:45:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [:facebook-core:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\facebook-core.aar\06d43c3145b5b942127a91789392cbbc\AndroidManifest.xml:48:25-92
+uses-permission#com.android.vending.BILLING
+ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:12:22-64
+uses-feature#android.software.vr.mode
+ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:15:9-48
+uses-feature#android.software.vr.high_performance
+ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:18:5-20:36
+	android:required
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:20:9-33
+	android:name
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:19:9-60
+activity#com.unity.purchasing.googleplay.PurchaseActivity
+ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:23:9-26:86
+	android:configChanges
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:25:13-170
+	android:theme
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:26:13-83
+	android:name
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:24:13-76
+activity#com.unity.purchasing.googleplay.VRPurchaseActivity
+ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:27:9-37:20
+	android:enableVrMode
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:30:13-106
+	android:configChanges
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:29:13-170
+	android:theme
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:31:13-51
+	android:name
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:28:13-78
+intent-filter#action:name:com.google.vr.vrcore.ACTION_NONE+category:name:com.google.intent.category.DAYDREAM
+ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:32:13-36:29
+action#com.google.vr.vrcore.ACTION_NONE
+ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:33:17-75
+	android:name
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:33:25-72
+category#com.google.intent.category.DAYDREAM
+ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:35:17-80
+	android:name
+		ADDED from [:GooglePlay:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\GooglePlay.aar\ec8e6d8e5491fc1b052bedd2a5a5d540\AndroidManifest.xml:35:27-77
+activity#com.unity3d.services.ads.adunit.AdUnitActivity
+ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:15:9-19:74
+	android:hardwareAccelerated
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:18:13-47
+	android:configChanges
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:17:13-170
+	android:theme
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:19:13-71
+	android:name
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:16:13-74
+activity#com.unity3d.services.ads.adunit.AdUnitTransparentActivity
+ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:20:9-24:86
+	android:hardwareAccelerated
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:23:13-47
+	android:configChanges
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:22:13-170
+	android:theme
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:24:13-83
+	android:name
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:21:13-85
+activity#com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity
+ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:25:9-29:86
+	android:hardwareAccelerated
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:28:13-48
+	android:configChanges
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:27:13-170
+	android:theme
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:29:13-83
+	android:name
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:26:13-93
+activity#com.unity3d.services.ads.adunit.AdUnitSoftwareActivity
+ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:30:9-34:74
+	android:hardwareAccelerated
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:33:13-48
+	android:configChanges
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:32:13-170
+	android:theme
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:34:13-71
+	android:name
+		ADDED from [:UnityAds:] C:\Users\emtmc\.gradle\caches\transforms-1\files-1.1\UnityAds.aar\8b31148c599fd83f658ca5ece11c0269\AndroidManifest.xml:31:13-82
+meta-data#com.DefaultCompany.Game2D
+ADDED from [:GoogleMobileAdsPlugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GoogleMobileAdsPlugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:22:9-24:70
+	android:value
+		ADDED from [:GoogleMobileAdsPlugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GoogleMobileAdsPlugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:24:13-67
+	android:name
+		ADDED from [:GoogleMobileAdsPlugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GoogleMobileAdsPlugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:23:13-53
+meta-data#com.google.android.gms.games.APP_ID
+ADDED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:18:9-20:49
+	android:value
+		ADDED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:20:13-46
+	android:name
+		ADDED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:19:13-63
+meta-data#com.google.android.gms.games.unityVersion
+ADDED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:23:9-25:43
+	android:value
+		ADDED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:25:13-40
+	android:name
+		ADDED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:24:13-69
+activity#com.google.games.bridge.NativeBridgeActivity
+ADDED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:27:9-29:86
+	android:theme
+		ADDED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:29:13-83
+	android:name
+		ADDED from [:GooglePlayGamesManifest.plugin] C:\Users\emtmc\RiderProjects\Games_for_mobile_devices\Game2D\Temp\gradleOut\GooglePlayGamesManifest.plugin\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:28:13-72

@@ -1,0 +1,4 @@
+#Fri Apr 26 12:58:47 BST 2019
+base.0=C\:\\Users\\emtmc\\RiderProjects\\Games_for_mobile_devices\\Game2D\\Temp\\gradleOut\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex
