@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/emtmc/Desktop/2DGame43IAP.apk
+C:/Users/emtmc/Desktop/2DGame45.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
@@ -217,3 +217,4 @@ ebd0fcfecda45cfd91320c470f790625 Assembly-CSharp-firstpass.dll:.IAPDemoProductUI
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityEngine.Purchasing.DemoInventory
 27e1adbff53d2875d34aee83a87ed22d Assembly-CSharp-firstpass.dll:.IAPDemo
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.IAPManager
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.IAP

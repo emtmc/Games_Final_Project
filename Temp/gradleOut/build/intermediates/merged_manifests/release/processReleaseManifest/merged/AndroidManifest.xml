@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.DefaultCompany.Game2D"
     android:installLocation="preferExternal"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -98,7 +98,7 @@
             android:value="&#xA;ca-app-pub-2074963649486507~4157892506" />
         <meta-data
             android:name="unity.build-id"
-            android:value="fabc629c-493a-4a06-a098-8fcb4753ea44" />
+            android:value="40a2369c-c3b6-47c1-a52a-4d79e41fc335" />
         <meta-data
             android:name="unity.splash-mode"
             android:value="0" />

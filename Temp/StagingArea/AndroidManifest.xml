@@ -21,7 +21,7 @@
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="fb2125064021119144" />
     <provider android:name="com.facebook.FacebookContentProvider" android:authorities="com.facebook.app.FacebookContentProvider2125064021119144" android:exported="true" />
     <meta-data android:name="com.google.gms.ads.349011032571" android:value="&#xD;&#xA;ca-app-pub-2074963649486507~4157892506" />
-    <meta-data android:name="unity.build-id" android:value="fabc629c-493a-4a06-a098-8fcb4753ea44" />
+    <meta-data android:name="unity.build-id" android:value="40a2369c-c3b6-47c1-a52a-4d79e41fc335" />
     <meta-data android:name="unity.splash-mode" android:value="0" />
     <meta-data android:name="unity.splash-enable" android:value="True" />
   </application>
