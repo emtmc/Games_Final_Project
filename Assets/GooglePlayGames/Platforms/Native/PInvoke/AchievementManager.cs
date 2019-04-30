@@ -14,7 +14,7 @@
 //    limitations under the License.
 // </copyright>
 
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
 
 namespace GooglePlayGames.Native.PInvoke
 {
@@ -150,7 +150,7 @@ namespace GooglePlayGames.Native.PInvoke
                 return C.AchievementManager_FetchAllResponse_GetStatus(SelfPtr());
             }
 
-            internal UIntPtr Length()
+            private UIntPtr Length()
             {
                 return C.AchievementManager_FetchAllResponse_GetData_Length(SelfPtr());
             }

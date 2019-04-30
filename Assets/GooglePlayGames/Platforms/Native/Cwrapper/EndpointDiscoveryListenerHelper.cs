@@ -16,6 +16,7 @@
 
 // Android only feature
 #if (UNITY_ANDROID)
+
 namespace GooglePlayGames.Native.Cwrapper {
     using System;
     using System.Runtime.InteropServices;
@@ -51,5 +52,4 @@ namespace GooglePlayGames.Native.Cwrapper {
             HandleRef self);
     }
 }
-#endif //UNITY_ANDROID
-
+#endif // (UNITY_ANDROID || UNITY_IPHONE)

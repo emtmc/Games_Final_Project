@@ -16,6 +16,8 @@
 
 // Android only feature
 #if (UNITY_ANDROID)
+
+
 namespace GooglePlayGames.Native.Cwrapper
 {
     using System;
@@ -140,5 +142,4 @@ namespace GooglePlayGames.Native.Cwrapper
          /* from(size_t) */UIntPtr out_size);
     }
 }
-#endif //UNITY_ANDROID
-
+#endif // (UNITY_ANDROID || UNITY_IPHONE)

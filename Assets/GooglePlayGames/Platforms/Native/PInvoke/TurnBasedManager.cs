@@ -14,7 +14,7 @@
 //    limitations under the License.
 // </copyright>
 
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
 
 namespace GooglePlayGames.Native.PInvoke
 {
@@ -209,13 +209,6 @@ namespace GooglePlayGames.Native.PInvoke
                 Callbacks.ToIntPtr(callback));
         }
 
-        internal void DismissMatch(NativeTurnBasedMatch match)
-        {
-            TurnBasedMultiplayerManager.TurnBasedMultiplayerManager_DismissMatch(
-                mGameServices.AsHandle(),
-                match.AsPointer());
-        }
-        
         internal void Rematch(NativeTurnBasedMatch match,
                           Action<TurnBasedMatchResponse> callback)
         {

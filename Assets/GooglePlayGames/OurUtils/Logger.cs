@@ -85,20 +85,8 @@ namespace GooglePlayGames.OurUtils
 
         private static string ToLogMessage(string prefix, string logType, string msg)
         {
-            string timeString = null;
-            try
-            {
-                timeString = DateTime.Now.ToString("MM/dd/yy H:mm:ss zzz");
-            }
-            catch (Exception)
-            {
-                PlayGamesHelperObject.RunOnGameThread(() =>
-                  Debug.LogWarning("*** [Play Games Plugin DLL] ERROR: Failed to format DateTime.Now"));
-                timeString = string.Empty;
-            }
-
             return string.Format("{0} [Play Games Plugin DLL] {1} {2}: {3}",
-                prefix, timeString, logType, msg);
+                prefix, DateTime.Now.ToString("MM/dd/yy H:mm:ss zzz"), logType, msg);
         }
     }
 }

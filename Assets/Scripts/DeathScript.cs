@@ -40,7 +40,7 @@ public class DeathScript : MonoBehaviour
            lives = 2;
            livesText.text = "Lives: " + lives.ToString();
            AdController.controller.videoAd();
-         //  AdMob.admob.HideAdMobBanner();
+           AdMob.admob.HideAdMobBanner();
            SaveData();
         }
         else if (lives == 2)
@@ -48,7 +48,7 @@ public class DeathScript : MonoBehaviour
            lives = 1;
            livesText.text = "Lives: " + lives.ToString();
            AdController.controller.videoAd();
-           //  AdMob.admob.HideAdMobBanner();
+           AdMob.admob.HideAdMobBanner();
            SaveData();
         }
         else if (lives <= 1)
@@ -58,7 +58,7 @@ public class DeathScript : MonoBehaviour
            Debug.Log("Game Over");
            AdController.controller.rewardVideoAd();
            UIScript.Instance.UnlockGameOver();
-//           AdMob.admob.HideAdMobBanner();
+           AdMob.admob.HideAdMobBanner();
            lives = 3;
            SaveData();
            SceneManager.LoadScene(0);

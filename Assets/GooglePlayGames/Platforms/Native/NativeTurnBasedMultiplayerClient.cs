@@ -14,7 +14,7 @@
 //    limitations under the License.
 // </copyright>
 
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
 
 namespace GooglePlayGames.Native
 {
@@ -156,25 +156,6 @@ namespace GooglePlayGames.Native
                     }
                     callback(matches);
                 });
-        }
-        
-        public void GetMatch(string matchId, Action<bool, TurnBasedMatch> callback)
-        {
-            mTurnBasedManager.GetMatch(matchId, response =>
-            {
-                using (var foundMatch = response.Match())
-                {
-                    if (foundMatch == null)
-                    {
-                        Logger.e(string.Format("Could not find match {0}", matchId));
-                        callback(false, null);
-                    }
-                    else
-                    {
-                        callback(true, foundMatch.AsTurnBasedMatch(mNativeClient.GetUserId()));
-                    }
-                }
-            });
         }
 
         private Action<TurnBasedManager.TurnBasedMatchResponse> BridgeMatchToUserCallback(
@@ -531,14 +512,6 @@ namespace GooglePlayGames.Native
                 });
         }
 
-        public void Dismiss(TurnBasedMatch match)
-        {
-            FindEqualVersionMatch(match, success => {
-                // actually just called on failure
-                Logger.e(string.Format("Could not find match {0}", match.MatchId));
-            }, mTurnBasedManager.DismissMatch);
-        }
-        
         public void Rematch(TurnBasedMatch match, Action<bool, TurnBasedMatch> callback)
         {
             callback = Callbacks.AsOnGameThreadCallback(callback);

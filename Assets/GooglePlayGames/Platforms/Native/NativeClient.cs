@@ -14,7 +14,7 @@
 //    limitations under the License.
 // </copyright>
 
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
 
 namespace GooglePlayGames.Native
 {
@@ -41,7 +41,8 @@ namespace GooglePlayGames.Native
         private enum AuthState
         {
             Unauthenticated,
-            Authenticated
+            Authenticated,
+            SilentPending
         }
 
         private readonly object GameServicesLock = new object();
@@ -56,11 +57,14 @@ namespace GooglePlayGames.Native
         private volatile IVideoClient mVideoClient;
         private volatile TokenClient mTokenClient;
         private volatile Action<Invitation, bool> mInvitationDelegate;
+        private volatile Dictionary<String, Achievement> mAchievements = null;
         private volatile Player mUser = null;
         private volatile List<Player> mFriends = null;
         private volatile Action<bool, string> mPendingAuthCallbacks;
+        private volatile Action<bool, string> mSilentAuthCallbacks;
         private volatile AuthState mAuthState = AuthState.Unauthenticated;
         private volatile uint mAuthGeneration = 0;
+        private volatile bool mSilentAuthFailed = false;
         private volatile bool friendsLoading = false;
 
         internal NativeClient(PlayGamesClientConfiguration configuration,
@@ -91,6 +95,27 @@ namespace GooglePlayGames.Native
                     InvokeCallbackOnGameThread(callback, true, null);
                     return;
                 }
+
+                // If this is silent auth, and silent auth already failed, there's no point in
+                // trying again.
+                if (mSilentAuthFailed && silent)
+                {
+                    InvokeCallbackOnGameThread(callback, false, "silent auth failed");
+                    return;
+                }
+
+                // Otherwise, hold the callback for invocation.
+                if (callback != null)
+                {
+                    if (silent)
+                    {
+                        mSilentAuthCallbacks += callback;
+                    }
+                    else
+                    {
+                        mPendingAuthCallbacks += callback;
+                    }
+                }
             }
 
             // reset friends loading flag
@@ -98,26 +123,24 @@ namespace GooglePlayGames.Native
 
             InitializeTokenClient();
 
-            Debug.Log("Starting Auth with token client.");
-            mTokenClient.FetchTokens(silent, (int result) => {
-                bool succeed = result == 0 /* CommonStatusCodes.SUCCEED */;
-                InitializeGameServices();
-                if (succeed) {
-                    if (callback != null) {
-                      mPendingAuthCallbacks += callback;
-                    }
-                    GameServices().StartAuthorizationUI();
-                } else {
-                    Action<bool, string> localCallback = callback;
-                    if (result == 16 /* CommonStatusCodes.CANCELED */) {
-                        InvokeCallbackOnGameThread(localCallback, false, "Authentication canceled");
-                    } else if (result == 8 /* CommonStatusCodes.DEVELOPER_ERROR */) {
-                        InvokeCallbackOnGameThread(localCallback, false, "Authentication failed - developer error");
+            // If we need to use the token client to authenticate, do that before initializing the GPG library.
+            if (mTokenClient.NeedsToRun()) {
+                Debug.Log("Starting Auth with token client.");
+                mTokenClient.FetchTokens((int result) => {
+                    InitializeGameServices();
+                    if (result == 0) {
+                        GameServices().StartAuthorizationUI();
                     } else {
-                        InvokeCallbackOnGameThread(localCallback, false, "Authentication failed");
+                        HandleAuthTransition(Types.AuthOperation.SIGN_IN, (Status.AuthStatus)result);
                     }
+                });
+            } else {
+                // If game services are uninitialized, creating them will start a silent auth attempt.
+                InitializeGameServices();
+                if (!silent) {
+                    GameServices().StartAuthorizationUI();
                 }
-            });
+            }
         }
 
         private static Action<T> AsOnGameThreadCallback<T>(Action<T> callback)
@@ -202,6 +225,7 @@ namespace GooglePlayGames.Native
                         }
 
                         Debug.Log("Building GPG services, implicitly attempts silent auth");
+                        mAuthState = AuthState.SilentPending;
                         mServices = builder.Build(config);
                         mEventsClient = new NativeEventClient(new EventManager(mServices));
                         mVideoClient = new NativeVideoClient(new VideoManager(mServices));
@@ -225,6 +249,7 @@ namespace GooglePlayGames.Native
                                 "See PlayGamesClientConfiguration.Builder.EnableSavedGames.");
                         }
 
+                        mAuthState = AuthState.SilentPending;
                         InitializeTokenClient();
                     }
                 }
@@ -248,10 +273,6 @@ namespace GooglePlayGames.Native
             mTokenClient.SetRequestEmail(mConfiguration.IsRequestingEmail);
             mTokenClient.SetRequestIdToken(mConfiguration.IsRequestingIdToken);
             mTokenClient.SetHidePopups(mConfiguration.IsHidingPopups);
-            mTokenClient.AddOauthScopes("https://www.googleapis.com/auth/games_lite");
-            if (mConfiguration.EnableSavedGames) {
-                mTokenClient.AddOauthScopes("https://www.googleapis.com/auth/drive.appdata");
-            }
             mTokenClient.AddOauthScopes(scopes);
             mTokenClient.SetAccountName(mConfiguration.AccountName);
         }
@@ -413,6 +434,52 @@ namespace GooglePlayGames.Native
             return (mFriends == null) ? new IUserProfile[0] : mFriends.ToArray();
         }
 
+        private void PopulateAchievements(uint authGeneration,
+                                          AchievementManager.FetchAllResponse response)
+        {
+
+            if (authGeneration != mAuthGeneration)
+            {
+                GooglePlayGames.OurUtils.Logger.d("Received achievement callback after signout occurred, ignoring");
+                return;
+            }
+
+            GooglePlayGames.OurUtils.Logger.d("Populating Achievements, status = " + response.Status());
+            lock (AuthStateLock)
+            {
+                if (response.Status() != Status.ResponseStatus.VALID &&
+                    response.Status() != Status.ResponseStatus.VALID_BUT_STALE)
+                {
+                    GooglePlayGames.OurUtils.Logger.e("Error retrieving achievements - check the log for more information. " +
+                        "Failing signin.");
+                    var localLoudAuthCallbacks = mPendingAuthCallbacks;
+                    mPendingAuthCallbacks = null;
+
+                    if (localLoudAuthCallbacks != null)
+                    {
+                        InvokeCallbackOnGameThread(localLoudAuthCallbacks, false,
+                                                   "Cannot load achievements, Authenication failing");
+                    }
+                    SignOut();
+                    return;
+                }
+
+                var achievements = new Dictionary<string, Achievement>();
+                foreach (var achievement in response)
+                {
+                    using (achievement)
+                    {
+                        achievements[achievement.Id()] = achievement.AsAchievement();
+                    }
+                }
+                GooglePlayGames.OurUtils.Logger.d("Found " + achievements.Count + " Achievements");
+                mAchievements = achievements;
+            }
+
+            GooglePlayGames.OurUtils.Logger.d("Maybe finish for Achievements");
+            MaybeFinishAuthentication();
+        }
+
         void MaybeFinishAuthentication()
         {
             Action<bool, string> localCallbacks = null;
@@ -421,9 +488,9 @@ namespace GooglePlayGames.Native
             {
                 // Only proceed if both the fetch-self and fetch-achievements callback have
                 // completed.
-                if (mUser == null)
+                if (mUser == null || mAchievements == null)
                 {
-                    GooglePlayGames.OurUtils.Logger.d("Auth not finished. User=" + mUser);
+                    GooglePlayGames.OurUtils.Logger.d("Auth not finished. User=" + mUser + " achievements=" + mAchievements);
                     return;
                 }
 
@@ -484,26 +551,61 @@ namespace GooglePlayGames.Native
                 switch (operation)
                 {
                     case Types.AuthOperation.SIGN_IN:
-                        if (status == Status.AuthStatus.VALID) {
+                        if (status == Status.AuthStatus.VALID)
+                        {
+                            // If sign-in succeeded, treat any silent auth callbacks the same way
+                            // we would treat loud ones.
+                            if (mSilentAuthCallbacks != null)
+                            {
+                                mPendingAuthCallbacks += mSilentAuthCallbacks;
+                                mSilentAuthCallbacks = null;
+                            }
+
                             uint currentAuthGeneration = mAuthGeneration;
+                            mServices.AchievementManager().FetchAll(
+                                results => PopulateAchievements(currentAuthGeneration, results));
                             mServices.PlayerManager().FetchSelf(
                                 results => PopulateUser(currentAuthGeneration, results));
                         }
-                        else {
+                        else
+                        {
                             // Auth failed
-                            // The initial silent auth failed - take note of that and
-                            // notify any pending silent-auth callbacks. If there are
-                            // additional non-silent auth callbacks pending, attempt to auth
-                            // by popping the Auth UI.
-                            mAuthState = AuthState.Unauthenticated;
-                            GooglePlayGames.OurUtils.Logger.d(
-                                    "AuthState == " + mAuthState +
-                                      " calling auth callbacks with failure");
+                            if (mAuthState == AuthState.SilentPending)
+                            {
+                                // The initial silent auth failed - take note of that and
+                                // notify any pending silent-auth callbacks. If there are
+                                // additional non-silent auth callbacks pending, attempt to auth
+                                // by popping the Auth UI.
+                                mSilentAuthFailed = true;
+                                mAuthState = AuthState.Unauthenticated;
+                                var silentCallbacks = mSilentAuthCallbacks;
+                                mSilentAuthCallbacks = null;
+                                GooglePlayGames.OurUtils.Logger.d(
+                                    "Invoking callbacks, AuthState changed " +
+                                    "from silentPending to Unauthenticated.");
 
-                            // Noisy sign-in failed - report failure.
-                            Action<bool, string> localCallbacks = mPendingAuthCallbacks;
-                            mPendingAuthCallbacks = null;
-                            InvokeCallbackOnGameThread(localCallbacks, false, "Authentication failed");
+                                InvokeCallbackOnGameThread(silentCallbacks, false, "silent auth failed");
+                                if (mPendingAuthCallbacks != null)
+                                {
+                                    GooglePlayGames.OurUtils.Logger.d(
+                                        "there are pending auth callbacks - starting AuthUI");
+                                    GameServices().StartAuthorizationUI();
+                                }
+                            }
+                            else
+                            {
+                                GooglePlayGames.OurUtils.Logger.d(
+                                        "AuthState == " + mAuthState +
+                                          " calling auth callbacks with failure");
+
+                                // make sure we are not paused
+                                UnpauseUnityPlayer();
+
+                                // Noisy sign-in failed - report failure.
+                                Action<bool, string> localCallbacks = mPendingAuthCallbacks;
+                                mPendingAuthCallbacks = null;
+                                InvokeCallbackOnGameThread(localCallbacks, false, "Authentication failed");
+                            }
                         }
                         break;
                     case Types.AuthOperation.SIGN_OUT:
@@ -516,12 +618,23 @@ namespace GooglePlayGames.Native
             }
         }
 
+#if UNITY_IOS || UNITY_IPHONE
+    [System.Runtime.InteropServices.DllImport("__Internal")]
+    internal static extern void UnpauseUnityPlayer();
+#else
+    private void UnpauseUnityPlayer()
+    {
+        // don't do anything.
+    }
+#endif
+
         private void ToUnauthenticated()
         {
             lock (AuthStateLock)
             {
                 mUser = null;
                 mFriends = null;
+                mAchievements = null;
                 mAuthState = AuthState.Unauthenticated;
                 mTokenClient = clientImpl.CreateTokenClient(true);
                 mAuthGeneration++;
@@ -647,63 +760,94 @@ namespace GooglePlayGames.Native
         }
 
         ///<summary></summary>
+        /// <seealso cref="GooglePlayGames.BasicApi.IPlayGamesClient.GetAchievement"/>
+        public Achievement GetAchievement(string achId)
+        {
+            if (mAchievements == null || !mAchievements.ContainsKey(achId))
+            {
+                return null;
+            }
+
+            return mAchievements[achId];
+        }
+
+        ///<summary></summary>
         /// <seealso cref="GooglePlayGames.BasicApi.IPlayGamesClient.LoadAchievements"/>
         public void LoadAchievements(Action<Achievement[]> callback)
         {
-            callback = AsOnGameThreadCallback(callback);
-            if (!IsAuthenticated())
-            {
-                callback(null);
-                return;
-            }
-            mServices.AchievementManager().FetchAll(
-                response => {
-                    if (response.Status() != Status.ResponseStatus.VALID &&
-                        response.Status() != Status.ResponseStatus.VALID_BUT_STALE)
-                    {
-                        GooglePlayGames.OurUtils.Logger.e("Error retrieving achievements - check the log for more information. ");
-                        callback(null);
-                        return;
-                    }
-
-                    Achievement[] data = new Achievement[(int)response.Length()];
-                    int i = 0;
-                    foreach (var achievement in response)
-                    {
-                        using (achievement)
-                        {
-                            data[i++] = achievement.AsAchievement();
-                        }
-                    }
-                    callback.Invoke(data);
-                });
-
+            Achievement[] data = new Achievement[mAchievements.Count];
+            mAchievements.Values.CopyTo (data, 0);
+            PlayGamesHelperObject.RunOnGameThread(() =>
+                callback.Invoke (data));
         }
 
         ///<summary></summary>
         /// <seealso cref="GooglePlayGames.BasicApi.IPlayGamesClient.UnlockAchievement"/>
         public void UnlockAchievement(string achId, Action<bool> callback)
         {
-            Misc.CheckNotNull(achId);
-
-            callback = AsOnGameThreadCallback(callback);
-
-            InitializeGameServices();
-            GameServices().AchievementManager().Unlock(achId);
-            callback(true);
+            UpdateAchievement("Unlock", achId, callback, a => a.IsUnlocked,
+                a =>
+                {
+                    a.IsUnlocked = true;
+                    GameServices().AchievementManager().Unlock(achId);
+                });
         }
 
         ///<summary></summary>
         /// <seealso cref="GooglePlayGames.BasicApi.IPlayGamesClient.RevealAchievement"/>
         public void RevealAchievement(string achId, Action<bool> callback)
         {
-            Misc.CheckNotNull(achId);
+            UpdateAchievement("Reveal", achId, callback, a => a.IsRevealed,
+                a =>
+                {
+                    a.IsRevealed = true;
+                    GameServices().AchievementManager().Reveal(achId);
+                });
+        }
 
+        private void UpdateAchievement(string updateType, string achId, Action<bool> callback,
+                                       Predicate<Achievement> alreadyDone, Action<Achievement> updateAchievment)
+        {
             callback = AsOnGameThreadCallback(callback);
 
+            Misc.CheckNotNull(achId);
+
             InitializeGameServices();
-            GameServices().AchievementManager().Reveal(achId);
-            callback(true);
+
+            var achievement = GetAchievement(achId);
+
+            if (achievement == null)
+            {
+                GooglePlayGames.OurUtils.Logger.d("Could not " + updateType + ", no achievement with ID " + achId);
+                callback(false);
+                return;
+            }
+
+            if (alreadyDone(achievement))
+            {
+                GooglePlayGames.OurUtils.Logger.d("Did not need to perform " + updateType + ": " + "on achievement " + achId);
+                callback(true);
+                return;
+            }
+
+            GooglePlayGames.OurUtils.Logger.d("Performing " + updateType + " on " + achId);
+            updateAchievment(achievement);
+
+            GameServices().AchievementManager().Fetch(achId, rsp =>
+                {
+                    if (rsp.Status() == Status.ResponseStatus.VALID)
+                    {
+                        mAchievements.Remove(achId);
+                        mAchievements.Add(achId, rsp.Achievement().AsAchievement());
+                        callback(true);
+                    }
+                    else
+                    {
+                        GooglePlayGames.OurUtils.Logger.e("Cannot refresh achievement " + achId + ": " +
+                            rsp.Status());
+                        callback(false);
+                    }
+                });
         }
 
         ///<summary></summary>
@@ -715,6 +859,21 @@ namespace GooglePlayGames.Native
 
             InitializeGameServices();
 
+            var achievement = GetAchievement(achId);
+            if (achievement == null)
+            {
+                GooglePlayGames.OurUtils.Logger.e("Could not increment, no achievement with ID " + achId);
+                callback(false);
+                return;
+            }
+
+            if (!achievement.IsIncremental)
+            {
+                GooglePlayGames.OurUtils.Logger.e("Could not increment, achievement with ID " + achId + " was not incremental");
+                callback(false);
+                return;
+            }
+
             if (steps < 0)
             {
                 GooglePlayGames.OurUtils.Logger.e("Attempted to increment by negative steps");
@@ -723,7 +882,21 @@ namespace GooglePlayGames.Native
             }
 
             GameServices().AchievementManager().Increment(achId, Convert.ToUInt32(steps));
-            callback(true);
+            GameServices().AchievementManager().Fetch(achId, rsp =>
+                {
+                    if (rsp.Status() == Status.ResponseStatus.VALID)
+                    {
+                        mAchievements.Remove(achId);
+                        mAchievements.Add(achId, rsp.Achievement().AsAchievement());
+                        callback(true);
+                    }
+                    else
+                    {
+                        GooglePlayGames.OurUtils.Logger.e("Cannot refresh achievement " + achId + ": " +
+                            rsp.Status());
+                        callback(false);
+                    }
+                });
         }
 
         ///<summary></summary>
@@ -735,6 +908,22 @@ namespace GooglePlayGames.Native
 
             InitializeGameServices();
 
+            var achievement = GetAchievement(achId);
+            if (achievement == null)
+            {
+                GooglePlayGames.OurUtils.Logger.e("Could not increment, no achievement with ID " + achId);
+                callback(false);
+                return;
+            }
+
+            if (!achievement.IsIncremental)
+            {
+                GooglePlayGames.OurUtils.Logger.e("Could not increment, achievement with ID " +
+                    achId + " is not incremental");
+                callback(false);
+                return;
+            }
+
             if (steps < 0)
             {
                 GooglePlayGames.OurUtils.Logger.e("Attempted to increment by negative steps");
@@ -743,7 +932,21 @@ namespace GooglePlayGames.Native
             }
 
             GameServices().AchievementManager().SetStepsAtLeast(achId, Convert.ToUInt32(steps));
-            callback(true);
+            GameServices().AchievementManager().Fetch(achId, rsp =>
+                {
+                    if (rsp.Status() == Status.ResponseStatus.VALID)
+                    {
+                        mAchievements.Remove(achId);
+                        mAchievements.Add(achId, rsp.Achievement().AsAchievement());
+                        callback(true);
+                    }
+                    else
+                    {
+                        GooglePlayGames.OurUtils.Logger.e("Cannot refresh achievement " + achId + ": " +
+                            rsp.Status());
+                        callback(false);
+                    }
+                });
         }
 
         ///<summary></summary>

@@ -20,7 +20,7 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-       // AdMob.admob.ShowAdMobBanner();
+        AdMob.admob.DisplayAdMobBanner();
     }
 
     // Update is called once per frame

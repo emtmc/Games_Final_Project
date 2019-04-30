@@ -16,6 +16,7 @@
 
 // Android only feature
 #if (UNITY_ANDROID)
+
 namespace GooglePlayGames.Native
 {
     using System;
@@ -303,5 +304,5 @@ namespace GooglePlayGames.Native
         }
     }
 }
-#endif //UNITY_ANDROID
 
+#endif // #if (UNITY_ANDROID || UNITY_IPHONE)

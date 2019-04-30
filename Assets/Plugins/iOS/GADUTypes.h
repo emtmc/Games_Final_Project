@@ -17,10 +17,6 @@ typedef NS_ENUM(NSInteger, GADUAdSize) { kGADUAdSizeUseFullWidth = -1 };
 /// Base type representing a GADU* pointer.
 typedef const void *GADUTypeRef;
 
-typedef const void *GADUTypeMobileAdsClientRef;
-
-
-
 /// Type representing a Unity banner client.
 typedef const void *GADUTypeBannerClientRef;
 
@@ -29,9 +25,6 @@ typedef const void *GADUTypeInterstitialClientRef;
 
 /// Type representing a Unity reward based video client.
 typedef const void *GADUTypeRewardBasedVideoAdClientRef;
-
-/// Type representing a Unity rewarded ad client.
-typedef const void *GADUTypeRewardedAdClientRef;
 
 /// Type representing a Unity ad loader.
 typedef const void *GADUTypeAdLoaderClientRef;
@@ -47,9 +40,6 @@ typedef const void *GADUTypeInterstitialRef;
 
 /// Type representing a GADURewardBasedVideoAd.
 typedef const void *GADUTypeRewardBasedVideoAdRef;
-
-/// Type representing a GADURewardedAd.
-typedef const void *GADUTypeRewardedAdRef;
 
 /// Type representing a GADUAdLoader.
 typedef const void *GADUTypeAdLoaderRef;
@@ -147,27 +137,6 @@ typedef void (*GADURewardBasedVideoAdDidCompleteCallback)(
 typedef void (*GADUAdLoaderDidReceiveNativeCustomTemplateAdCallback)(
     GADUTypeAdLoaderClientRef *adLoader, GADUTypeNativeCustomTemplateAdRef nativeCustomTemplateAd,
     const char *templateID);
-
-/// Callback for when a rewarded ad request was successfully loaded.
-typedef void (*GADURewardedAdDidReceiveAdCallback)(GADUTypeRewardedAdClientRef *rewardedAdClient);
-
-/// Callback for when a rewarded ad request failed.
-typedef void (*GADURewardedAdDidFailToReceiveAdWithErrorCallback)(
-    GADUTypeRewardedAdClientRef *rewardedAdClient, const char *error);
-
-/// Callback for when a rewarded ad failed to show.
-typedef void (*GADURewardedAdDidFailToShowAdWithErrorCallback)(
-    GADUTypeRewardedAdClientRef *rewardedAdClient, const char *error);
-
-/// Callback for when a rewarded ad is opened.
-typedef void (*GADURewardedAdDidOpenCallback)(GADUTypeRewardedAdClientRef *rewardedAdClient);
-
-/// Callback for when a rewarded ad is closed.
-typedef void (*GADURewardedAdDidCloseCallback)(GADUTypeRewardedAdClientRef *rewardedAdClient);
-
-/// Callback for when a user earned a reward.
-typedef void (*GADUUserEarnedRewardCallback)(GADUTypeRewardedAdClientRef *rewardBasedVideoClient,
-                                             const char *rewardType, double rewardAmount);
 
 /// Callback for when a native ad request failed.
 typedef void (*GADUAdLoaderDidFailToReceiveAdWithErrorCallback)(GADUTypeAdLoaderClientRef *adLoader,

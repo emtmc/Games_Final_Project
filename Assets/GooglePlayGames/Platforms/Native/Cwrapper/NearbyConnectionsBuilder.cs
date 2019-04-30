@@ -15,7 +15,9 @@
 // </copyright>
 
 // Android only feature
-#if UNITY_ANDROID
+#if (UNITY_ANDROID)
+
+
 namespace GooglePlayGames.Native.Cwrapper {
 using System;
 using System.Collections.Generic;
@@ -67,5 +69,4 @@ internal static class NearbyConnectionsBuilder {
         HandleRef self);
 }
 }
-#endif //UNITY_ANDROID
-
+#endif // (UNITY_ANDROID || UNITY_IPHONE)

@@ -14,7 +14,7 @@
 //    limitations under the License.
 // </copyright>
 
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
 
 namespace GooglePlayGames.Native.PInvoke
 {
@@ -44,11 +44,6 @@ namespace GooglePlayGames.Native.PInvoke
         internal ulong CreationTime()
         {
             return C.TurnBasedMatch_CreationTime(SelfPtr());
-        }
-
-        internal ulong LastUpdateTime()
-        {
-            return C.TurnBasedMatch_LastUpdateTime(SelfPtr());
         }
 
         internal IEnumerable<MultiplayerParticipant> Participants()
@@ -119,7 +114,7 @@ namespace GooglePlayGames.Native.PInvoke
         internal bool HasRematchId()
         {
             string rematchId = RematchId();
-            return !string.IsNullOrEmpty(rematchId) && !rematchId.Equals("(null)");
+            return string.IsNullOrEmpty(rematchId) ||  !rematchId.Equals("(null)");
         }
 
         internal string RematchId()
@@ -204,9 +199,7 @@ namespace GooglePlayGames.Native.PInvoke
                 ToTurnStatus(MatchStatus()),
                 ToMatchStatus(pendingParticipantId, MatchStatus()),
                 Variant(),
-                Version(),
-                CreationTime(),
-                LastUpdateTime()
+                Version()
             );
         }
 

@@ -13,13 +13,19 @@
 //  See the License for the specific language governing permissions and
 //    limitations under the License.
 // </copyright>
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
+
 namespace GooglePlayGames.Native.Cwrapper
 {
     internal static class SymbolLocation
     {
-        internal const string NativeSymbolLocation = "gpg";
+        #if UNITY_ANDROID
+    internal const string NativeSymbolLocation = "gpg";
+    #endif
+
+        #if UNITY_IPHONE
+        internal const string NativeSymbolLocation = "__Internal";
+        #endif
     }
 }
-#endif //UNITY_ANDROID
-
+#endif

@@ -14,7 +14,8 @@
 //    limitations under the License.
 // </copyright>
 
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
+
 namespace GooglePlayGames.Native.PInvoke
 {
     using System;
@@ -131,5 +132,4 @@ namespace GooglePlayGames.Native.PInvoke
         }
     }
 }
-#endif //UNITY_ANDROID
-
+#endif // (UNITY_ANDROID || UNITY_IPHONE)

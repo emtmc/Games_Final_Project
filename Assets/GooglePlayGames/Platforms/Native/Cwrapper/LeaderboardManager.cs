@@ -14,7 +14,8 @@
 //    limitations under the License.
 // </copyright>
 
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
+
 namespace GooglePlayGames.Native.Cwrapper
 {
     using System;
@@ -192,5 +193,4 @@ namespace GooglePlayGames.Native.Cwrapper
          /* from(size_t) */UIntPtr index);
     }
 }
-#endif //UNITY_ANDROID
-
+#endif // (UNITY_ANDROID || UNITY_IPHONE)

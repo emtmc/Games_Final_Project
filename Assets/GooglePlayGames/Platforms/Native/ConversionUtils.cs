@@ -14,7 +14,8 @@
 //    limitations under the License.
 // </copyright>
 
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
+
 
 namespace GooglePlayGames.Native
 {
@@ -188,5 +189,4 @@ namespace GooglePlayGames.Native
 
     }
 }
-#endif //UNITY_ANDROID
-
+#endif // #if (UNITY_ANDROID || UNITY_IPHONE)

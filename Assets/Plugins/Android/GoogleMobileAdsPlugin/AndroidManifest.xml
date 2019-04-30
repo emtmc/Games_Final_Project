@@ -11,10 +11,5 @@ required for displaying ads.
   <uses-sdk android:minSdkVersion="14"
       android:targetSdkVersion="19" />
   <application>
-  <!-- Your AdMob App ID will look similar to this sample ID:
-    ca-app-pub-3940256099942544~3347511713 -->
-    <meta-data
-    android:name="com.DefaultCompany.Game2D"
-    android:value="ca-app-pub-2074963649486507~4157892506"/>
   </application>
 </manifest>

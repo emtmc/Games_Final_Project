@@ -14,7 +14,7 @@
 //    limitations under the License.
 // </copyright>
 
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
 
 namespace GooglePlayGames
 {
@@ -22,9 +22,6 @@ namespace GooglePlayGames
     using System.Collections;
     using GooglePlayGames.OurUtils;
     using UnityEngine;
-#if UNITY_2017_1_OR_NEWER
-    using UnityEngine.Networking;
-#endif
     using UnityEngine.SocialPlatforms;
 
     /// <summary>
@@ -134,12 +131,7 @@ namespace GooglePlayGames
             // avatar configured.
             if (!string.IsNullOrEmpty(AvatarURL))
             {
-#if UNITY_2017_1_OR_NEWER
-                UnityWebRequest www = UnityWebRequestTexture.GetTexture(AvatarURL);
-                www.SendWebRequest();
-#else
                 WWW www = new WWW(AvatarURL);
-#endif
                 while (!www.isDone)
                 {
                     yield return null;
@@ -147,11 +139,7 @@ namespace GooglePlayGames
 
                 if (www.error == null)
                 {
-#if UNITY_2017_1_OR_NEWER
-                    this.mImage = DownloadHandlerTexture.GetContent(www);
-#else
                     this.mImage = www.texture;
-#endif
                 }
                 else
                 {

@@ -13,7 +13,7 @@
 //  See the License for the specific language governing permissions and
 //    limitations under the License.
 // </copyright>
-#if UNITY_ANDROID
+#if (UNITY_ANDROID || (UNITY_IPHONE && !NO_GPGS))
 
 namespace GooglePlayGames
 {
@@ -34,7 +34,11 @@ namespace GooglePlayGames
             #if UNITY_ANDROID
                 GooglePlayGames.OurUtils.Logger.d("Creating Android IPlayGamesClient Client");
                 return new GooglePlayGames.Native.NativeClient(config,
-                    new GooglePlayGames.Native.Android.AndroidClient());
+                    new GooglePlayGames.Android.AndroidClient());
+            #elif (UNITY_IPHONE && !NO_GPGS)
+            GooglePlayGames.OurUtils.Logger.d("Creating IOS IPlayGamesClient");
+                return new GooglePlayGames.Native.NativeClient(config,
+            new GooglePlayGames.IOS.IOSClient());
             #else
                 GooglePlayGames.OurUtils.Logger.d("Cannot create IPlayGamesClient for unknown platform, returning DummyClient");
                 return new GooglePlayGames.BasicApi.DummyClient();
