@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/emtmc/Desktop/2DGame1.apk
+C:/Users/emtmc/Desktop/2DGameBeta.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
